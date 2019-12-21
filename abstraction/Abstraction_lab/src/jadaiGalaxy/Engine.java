@@ -34,7 +34,7 @@ public class Engine {
 
             player.collectStars(playerRow,playerCol);
 
-            command = this.reader.readLine();
+            
         }
 
     }
