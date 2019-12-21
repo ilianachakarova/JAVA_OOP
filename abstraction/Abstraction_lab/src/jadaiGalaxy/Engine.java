@@ -15,10 +15,10 @@ public class Engine {
     }
 
     public void run(){
-
+        this.command = this.reader.readLine();
         while (!command.equals("Let the Force be with you")) {
             int[] playerPosition =
-                   InputParser.readArray(this.reader.readLine());
+                   InputParser.readArray(command.readLine());
 
             int[] enemyPosition =
                    InputParser.readArray((this.reader.readLine()));
@@ -34,7 +34,7 @@ public class Engine {
 
             player.collectStars(playerRow,playerCol);
 
-            
+            this.command = this.reader.readLine();
         }
 
     }
